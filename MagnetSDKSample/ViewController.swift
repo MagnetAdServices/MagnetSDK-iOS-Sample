@@ -24,7 +24,7 @@ class ViewController: UIViewController, MagnetEventsDelegate {
     @IBOutlet weak var magnetMobileBannerAd: MagnetMobileBannerView!
     
     // شناسه ی adUnit خود را که از پنل مگنت دریافت نموده اید در یک constant نگهداری کنید
-    let myAdUnitId = "0ed6ce11664e48ac9cc8982f2fcbca3a"
+    let myAdUnitId = "your adUnitId"
     
     // MARK: ---------
     override func viewDidLoad() {
