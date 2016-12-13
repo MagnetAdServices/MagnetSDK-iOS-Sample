@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // پس از init کلاس MagnetSDK می توانید تنظیمات مگنت را تغییر دهید
         // برای تست مگنت می توانید به صورت زیر تست مد را فعال کنید:
-//        MagnetSDK.settings.testMode = true
+        MagnetSDK.settings.testMode = true
         
         // با تنظیم زیر می توانید تعیین کنید که پخش صدا فعال باشد یا خیر
         MagnetSDK.settings.soundEnable = true
