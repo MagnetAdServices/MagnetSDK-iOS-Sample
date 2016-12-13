@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="RjE-Oo-Rrf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MagnetSDKSample-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MagnetSDKSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MagnetMRectAD:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxa-T9-XGN">
+                                <rect key="frame" x="16" y="72" width="136" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="136" id="3X6-hY-A9m"/>
+                                    <constraint firstAttribute="height" constant="23" id="VG9-D6-bfi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wgg-at-Cd3" customClass="MagnetMRectView" customModule="MagnetSDK">
+                                <rect key="frame" x="37" y="103" width="300" height="250"/>
+                                <color key="backgroundColor" red="1" green="0.38469380523759" blue="0.70372301394069658" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="Rju-hC-0mq"/>
+                                    <constraint firstAttribute="width" constant="300" id="zwQ-um-CWy"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MagnetMobileBannerAD:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UdV-87-J8E">
+                                <rect key="frame" x="16" y="590" width="191" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="5tD-Hr-Wkb"/>
+                                    <constraint firstAttribute="width" constant="191" id="9vc-Bn-QJ1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PFj-Hi-lMz" customClass="MagnetMobileBannerView" customModule="MagnetSDK">
+                                <rect key="frame" x="16" y="617" width="320" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.41482447542913492" green="0.64581950413262934" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mxa-T9-XGN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="GaJ-dk-91d"/>
+                            <constraint firstItem="Wgg-at-Cd3" firstAttribute="top" secondItem="mxa-T9-XGN" secondAttribute="bottom" constant="8" id="HhR-a7-fWU"/>
+                            <constraint firstItem="UdV-87-J8E" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="VfR-uB-pkX"/>
+                            <constraint firstItem="Wgg-at-Cd3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nX4-hC-jel"/>
+                            <constraint firstItem="mxa-T9-XGN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="p5E-iB-uFR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="UdV-87-J8E" secondAttribute="bottom" constant="56" id="s1T-nK-bLA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="MagnetSDKSample" id="Odt-2Y-acL">
+                        <barButtonItem key="rightBarButtonItem" title="Native&gt;" id="8WI-bZ-eXV">
+                            <connections>
+                                <segue destination="VDh-sk-toc" kind="show" id="ORK-uf-Nyb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="magnetMRectAd" destination="Wgg-at-Cd3" id="BhZ-34-Kwe"/>
+                        <outlet property="magnetMobileBannerAd" destination="PFj-Hi-lMz" id="gVh-SO-U2e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="962.39999999999998" y="116.49175412293854"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="twH-oz-gRZ">
+            <objects>
+                <tableViewController id="VDh-sk-toc" customClass="TableViewController" customModule="MagnetSDKSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="s" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="316" sectionHeaderHeight="28" sectionFooterHeight="28" id="wHF-UP-ImX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="4pG-fd-Tcl" customClass="TableViewCell" customModule="MagnetSDKSample" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="316"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4pG-fd-Tcl" id="w3d-hN-jP3">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="315"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZDN-Fm-l8S">
+                                            <rect key="frame" x="8" y="8" width="359" height="299"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="r8T-R1-t30">
+                                                    <rect key="frame" x="0.0" y="0.0" width="359" height="258"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ja6-Mg-6c7">
+                                                            <rect key="frame" x="0.0" y="0.0" width="359" height="48"/>
+                                                            <subviews>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="GAl-qE-9Kv">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="301" height="48"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="headLine Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUZ-eT-WI1">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="301" height="24"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkc-Xy-r3U">
+                                                                            <rect key="frame" x="0.0" y="24" width="301" height="24"/>
+                                                                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                                            <color key="textColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xre-gz-hQw">
+                                                                    <rect key="frame" x="311" y="0.0" width="48" height="48"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="48" id="1qH-3i-aaJ"/>
+                                                                        <constraint firstAttribute="width" secondItem="xre-gz-hQw" secondAttribute="height" multiplier="1:1" id="Z3Y-bW-Pgf"/>
+                                                                        <constraint firstAttribute="height" constant="48" id="drd-Te-s1W"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_cover" translatesAutoresizingMaskIntoConstraints="NO" id="MPj-af-H35">
+                                                            <rect key="frame" x="0.0" y="58" width="359" height="200"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="200" id="2Yz-gD-Wc8"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                </stackView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTz-Xd-90a">
+                                                    <rect key="frame" x="0.0" y="268" width="150" height="31"/>
+                                                    <color key="backgroundColor" red="0.8968038550699976" green="0.92983543218311926" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="150" id="F4Y-aK-WiJ"/>
+                                                    </constraints>
+                                                    <state key="normal" title="actionButton"/>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="ZDN-Fm-l8S" secondAttribute="bottom" id="Dd5-y6-fjp"/>
+                                        <constraint firstItem="ZDN-Fm-l8S" firstAttribute="top" secondItem="w3d-hN-jP3" secondAttribute="topMargin" id="Qrr-Jy-80Y"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="ZDN-Fm-l8S" secondAttribute="trailing" id="vWe-QK-fvh"/>
+                                        <constraint firstItem="ZDN-Fm-l8S" firstAttribute="leading" secondItem="w3d-hN-jP3" secondAttribute="leadingMargin" id="xWB-Ku-VdB"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="action" destination="JTz-Xd-90a" id="hpN-jT-y2m"/>
+                                    <outlet property="descriptionLabel" destination="dkc-Xy-r3U" id="lek-MQ-1uk"/>
+                                    <outlet property="headLine" destination="OUZ-eT-WI1" id="za5-RK-yAn"/>
+                                    <outlet property="iconImage" destination="xre-gz-hQw" id="sG9-jv-fQF"/>
+                                    <outlet property="mainImage" destination="MPj-af-H35" id="BsE-xJ-cyq"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="VDh-sk-toc" id="Y4z-qe-lqn"/>
+                            <outlet property="delegate" destination="VDh-sk-toc" id="LEO-K7-BUQ"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <navigationItem title="سشس" id="POd-Aj-kl8"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V4G-Wl-c2F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1704.8" y="116.49175412293854"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Vaa-ui-khe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RjE-Oo-Rrf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NRj-yJ-Mcf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9JS-go-RsE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hQw-yZ-3kj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37.600000000000001" y="116.49175412293854"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="no_cover" width="500" height="500"/>
+    </resources>
+</document>

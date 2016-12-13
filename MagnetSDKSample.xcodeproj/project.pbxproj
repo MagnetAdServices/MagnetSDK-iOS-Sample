@@ -1,0 +1,352 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		306F27AD1DEB07DF00883423 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306F27AC1DEB07DF00883423 /* DataModel.swift */; };
+		307637201DE969930043B693 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3076371F1DE969930043B693 /* AppDelegate.swift */; };
+		307637221DE969930043B693 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307637211DE969930043B693 /* ViewController.swift */; };
+		307637251DE969930043B693 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 307637231DE969930043B693 /* Main.storyboard */; };
+		307637271DE969930043B693 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 307637261DE969930043B693 /* Assets.xcassets */; };
+		3076372A1DE969930043B693 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 307637281DE969930043B693 /* LaunchScreen.storyboard */; };
+		308095231DE9AEE700BCAEF7 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308095221DE9AEE700BCAEF7 /* TableViewController.swift */; };
+		308095251DE9AEFD00BCAEF7 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308095241DE9AEFD00BCAEF7 /* TableViewCell.swift */; };
+		3083A7721E00233100398FEA /* MagnetSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3083A7711E00233100398FEA /* MagnetSDK.framework */; };
+		3083A7731E00233100398FEA /* MagnetSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3083A7711E00233100398FEA /* MagnetSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		30830BED1DF82AD1007BDD1D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3083A7731E00233100398FEA /* MagnetSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		306F27AC1DEB07DF00883423 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		3076371C1DE969930043B693 /* MagnetSDKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagnetSDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3076371F1DE969930043B693 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		307637211DE969930043B693 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		307637241DE969930043B693 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		307637261DE969930043B693 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		307637291DE969930043B693 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3076372B1DE969930043B693 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		308095221DE9AEE700BCAEF7 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		308095241DE9AEFD00BCAEF7 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		3083A7711E00233100398FEA /* MagnetSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MagnetSDK.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		307637191DE969930043B693 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3083A7721E00233100398FEA /* MagnetSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		307637131DE969930043B693 = {
+			isa = PBXGroup;
+			children = (
+				3083A7711E00233100398FEA /* MagnetSDK.framework */,
+				3076371E1DE969930043B693 /* MagnetSDKSample */,
+				3076371D1DE969930043B693 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3076371D1DE969930043B693 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3076371C1DE969930043B693 /* MagnetSDKSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3076371E1DE969930043B693 /* MagnetSDKSample */ = {
+			isa = PBXGroup;
+			children = (
+				3076371F1DE969930043B693 /* AppDelegate.swift */,
+				307637211DE969930043B693 /* ViewController.swift */,
+				308095221DE9AEE700BCAEF7 /* TableViewController.swift */,
+				308095241DE9AEFD00BCAEF7 /* TableViewCell.swift */,
+				306F27AC1DEB07DF00883423 /* DataModel.swift */,
+				307637231DE969930043B693 /* Main.storyboard */,
+				307637261DE969930043B693 /* Assets.xcassets */,
+				307637281DE969930043B693 /* LaunchScreen.storyboard */,
+				3076372B1DE969930043B693 /* Info.plist */,
+			);
+			path = MagnetSDKSample;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3076371B1DE969930043B693 /* MagnetSDKSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3076372E1DE969930043B693 /* Build configuration list for PBXNativeTarget "MagnetSDKSample" */;
+			buildPhases = (
+				307637181DE969930043B693 /* Sources */,
+				307637191DE969930043B693 /* Frameworks */,
+				3076371A1DE969930043B693 /* Resources */,
+				30830BED1DF82AD1007BDD1D /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MagnetSDKSample;
+			productName = MagnetSDKSample;
+			productReference = 3076371C1DE969930043B693 /* MagnetSDKSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		307637141DE969930043B693 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Magnet;
+				TargetAttributes = {
+					3076371B1DE969930043B693 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = VNY4MQ72Q2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 307637171DE969930043B693 /* Build configuration list for PBXProject "MagnetSDKSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 307637131DE969930043B693;
+			productRefGroup = 3076371D1DE969930043B693 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3076371B1DE969930043B693 /* MagnetSDKSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3076371A1DE969930043B693 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3076372A1DE969930043B693 /* LaunchScreen.storyboard in Resources */,
+				307637271DE969930043B693 /* Assets.xcassets in Resources */,
+				307637251DE969930043B693 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		307637181DE969930043B693 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				306F27AD1DEB07DF00883423 /* DataModel.swift in Sources */,
+				307637221DE969930043B693 /* ViewController.swift in Sources */,
+				308095251DE9AEFD00BCAEF7 /* TableViewCell.swift in Sources */,
+				308095231DE9AEE700BCAEF7 /* TableViewController.swift in Sources */,
+				307637201DE969930043B693 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		307637231DE969930043B693 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				307637241DE969930043B693 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		307637281DE969930043B693 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				307637291DE969930043B693 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3076372C1DE969930043B693 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3076372D1DE969930043B693 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3076372F1DE969930043B693 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VNY4MQ72Q2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = MagnetSDKSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ir.magnet.MagnetSDKSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		307637301DE969930043B693 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VNY4MQ72Q2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = MagnetSDKSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ir.magnet.MagnetSDKSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		307637171DE969930043B693 /* Build configuration list for PBXProject "MagnetSDKSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3076372C1DE969930043B693 /* Debug */,
+				3076372D1DE969930043B693 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3076372E1DE969930043B693 /* Build configuration list for PBXNativeTarget "MagnetSDKSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3076372F1DE969930043B693 /* Debug */,
+				307637301DE969930043B693 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 307637141DE969930043B693 /* Project object */;
+}

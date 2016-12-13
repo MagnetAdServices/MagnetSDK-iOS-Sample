@@ -1,0 +1,10 @@
+framework module MagnetSDK {
+  umbrella header "MagnetSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module MagnetSDK.Swift {
+    header "MagnetSDK-Swift.h"
+}
