@@ -1,6 +1,7 @@
 # Magnet iOS SDK integration (Swift 3.1)
 Sample project to integrate Magnet's advertising sdk
 
+<div style="direction: rtl">
 این متن جهت آماده سازی و استفاده از کتابخانه مگنت در برنامه‌ی کاربردی iOS شما تهیه شده است. در صورت داشتن هر گونه سوال، از طریق پست الکترونیک info@magnet.ir آن را با ما در میان بگذارید.
 
 ----------------------------------------------------------------------------
@@ -336,5 +337,5 @@ func onMagnetAdError(_ code: Int, message: String, type: String) {
 - [Swift 2.3 Sample](http://github.com)
 - [Objective-C Sample](http://github.com)
 
-
+</div>
 
