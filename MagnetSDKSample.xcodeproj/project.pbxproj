@@ -7,14 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		306F27AD1DEB07DF00883423 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306F27AC1DEB07DF00883423 /* DataModel.swift */; };
 		307637201DE969930043B693 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3076371F1DE969930043B693 /* AppDelegate.swift */; };
 		307637221DE969930043B693 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307637211DE969930043B693 /* ViewController.swift */; };
 		307637251DE969930043B693 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 307637231DE969930043B693 /* Main.storyboard */; };
 		307637271DE969930043B693 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 307637261DE969930043B693 /* Assets.xcassets */; };
 		3076372A1DE969930043B693 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 307637281DE969930043B693 /* LaunchScreen.storyboard */; };
-		308095231DE9AEE700BCAEF7 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308095221DE9AEE700BCAEF7 /* TableViewController.swift */; };
-		308095251DE9AEFD00BCAEF7 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308095241DE9AEFD00BCAEF7 /* TableViewCell.swift */; };
 		3083A7721E00233100398FEA /* MagnetSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3083A7711E00233100398FEA /* MagnetSDK.framework */; };
 		3083A7731E00233100398FEA /* MagnetSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3083A7711E00233100398FEA /* MagnetSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -34,7 +31,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		306F27AC1DEB07DF00883423 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		3076371C1DE969930043B693 /* MagnetSDKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagnetSDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3076371F1DE969930043B693 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		307637211DE969930043B693 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,8 +38,6 @@
 		307637261DE969930043B693 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		307637291DE969930043B693 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3076372B1DE969930043B693 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		308095221DE9AEE700BCAEF7 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		308095241DE9AEFD00BCAEF7 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		3083A7711E00233100398FEA /* MagnetSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MagnetSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,9 +75,6 @@
 			children = (
 				3076371F1DE969930043B693 /* AppDelegate.swift */,
 				307637211DE969930043B693 /* ViewController.swift */,
-				308095221DE9AEE700BCAEF7 /* TableViewController.swift */,
-				308095241DE9AEFD00BCAEF7 /* TableViewCell.swift */,
-				306F27AC1DEB07DF00883423 /* DataModel.swift */,
 				307637231DE969930043B693 /* Main.storyboard */,
 				307637261DE969930043B693 /* Assets.xcassets */,
 				307637281DE969930043B693 /* LaunchScreen.storyboard */,
@@ -166,10 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				306F27AD1DEB07DF00883423 /* DataModel.swift in Sources */,
 				307637221DE969930043B693 /* ViewController.swift in Sources */,
-				308095251DE9AEFD00BCAEF7 /* TableViewCell.swift in Sources */,
-				308095231DE9AEE700BCAEF7 /* TableViewController.swift in Sources */,
 				307637201DE969930043B693 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

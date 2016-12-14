@@ -16,7 +16,6 @@ import MagnetSDK
 // پروتکل MagnetEventsDelegate را برای دریافت خطاهای هنگام اجرا می توانید پیاده سازی کنید
 
 class ViewController: UIViewController, MagnetEventsDelegate {
-    var locationManager = CLLocationManager()
 
     // MARK: My AD Views
     // ویو (View) های خود را که در قسمت Custom Class شان از کلاس های مگنت به ارث برده اید در کنترلر خود تعریف کنید
@@ -29,10 +28,6 @@ class ViewController: UIViewController, MagnetEventsDelegate {
     // MARK: ---------
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.requestWhenInUseAuthorization()
-
         
         // برای لود تبلیغ تنها کافیست متد زیر را اجرا کنید
         // magnetMRectAd.loadRequest(myAdUnitId)
@@ -60,7 +55,7 @@ class ViewController: UIViewController, MagnetEventsDelegate {
     func onMagnetAdError(_ code: Int, message: String, type: String) {
         print("Magnet ERROR: \(type) -> \(code): \(message)")
         
-        if code == 41 || code == 31  {
+        if code == 41 || code == 31 {
             switch type {
             case "mRect":
                 DispatchQueue.main.async {
