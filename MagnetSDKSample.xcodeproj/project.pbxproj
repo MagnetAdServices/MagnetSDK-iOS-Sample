@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		307637201DE969930043B693 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3076371F1DE969930043B693 /* AppDelegate.swift */; };
-		307637221DE969930043B693 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307637211DE969930043B693 /* ViewController.swift */; };
+		307637221DE969930043B693 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307637211DE969930043B693 /* MainViewController.swift */; };
 		307637251DE969930043B693 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 307637231DE969930043B693 /* Main.storyboard */; };
-		307637271DE969930043B693 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 307637261DE969930043B693 /* Assets.xcassets */; };
 		3076372A1DE969930043B693 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 307637281DE969930043B693 /* LaunchScreen.storyboard */; };
-		3083A7721E00233100398FEA /* MagnetSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3083A7711E00233100398FEA /* MagnetSDK.framework */; };
-		3083A7731E00233100398FEA /* MagnetSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3083A7711E00233100398FEA /* MagnetSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		309ACE311E067433008A38F1 /* MobileBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309ACE301E067433008A38F1 /* MobileBannerViewController.swift */; };
+		309ACE331E067444008A38F1 /* MRectBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309ACE321E067444008A38F1 /* MRectBannerViewController.swift */; };
+		309ACE351E067457008A38F1 /* NativeAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309ACE341E067457008A38F1 /* NativeAdViewController.swift */; };
+		309ACE371E068A34008A38F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 309ACE361E068A34008A38F1 /* Assets.xcassets */; };
+		30CABA2F1E019AE60001CACD /* MagnetSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30CABA2E1E019AE60001CACD /* MagnetSDK.framework */; };
+		30CABA301E019AE60001CACD /* MagnetSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 30CABA2E1E019AE60001CACD /* MagnetSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,7 +26,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3083A7731E00233100398FEA /* MagnetSDK.framework in Embed Frameworks */,
+				30CABA301E019AE60001CACD /* MagnetSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -33,12 +36,15 @@
 /* Begin PBXFileReference section */
 		3076371C1DE969930043B693 /* MagnetSDKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagnetSDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3076371F1DE969930043B693 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		307637211DE969930043B693 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		307637211DE969930043B693 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		307637241DE969930043B693 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		307637261DE969930043B693 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		307637291DE969930043B693 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3076372B1DE969930043B693 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3083A7711E00233100398FEA /* MagnetSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MagnetSDK.framework; sourceTree = "<group>"; };
+		309ACE301E067433008A38F1 /* MobileBannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileBannerViewController.swift; sourceTree = "<group>"; };
+		309ACE321E067444008A38F1 /* MRectBannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MRectBannerViewController.swift; sourceTree = "<group>"; };
+		309ACE341E067457008A38F1 /* NativeAdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeAdViewController.swift; sourceTree = "<group>"; };
+		309ACE361E068A34008A38F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		30CABA2E1E019AE60001CACD /* MagnetSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MagnetSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3083A7721E00233100398FEA /* MagnetSDK.framework in Frameworks */,
+				30CABA2F1E019AE60001CACD /* MagnetSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,8 +62,9 @@
 		307637131DE969930043B693 = {
 			isa = PBXGroup;
 			children = (
-				3083A7711E00233100398FEA /* MagnetSDK.framework */,
+				30CABA2E1E019AE60001CACD /* MagnetSDK.framework */,
 				3076371E1DE969930043B693 /* MagnetSDKSample */,
+				309ACE2E1E067111008A38F1 /* Supporting Files */,
 				3076371D1DE969930043B693 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,12 +81,23 @@
 			isa = PBXGroup;
 			children = (
 				3076371F1DE969930043B693 /* AppDelegate.swift */,
-				307637211DE969930043B693 /* ViewController.swift */,
+				307637211DE969930043B693 /* MainViewController.swift */,
+				309ACE301E067433008A38F1 /* MobileBannerViewController.swift */,
+				309ACE321E067444008A38F1 /* MRectBannerViewController.swift */,
+				309ACE341E067457008A38F1 /* NativeAdViewController.swift */,
 				307637231DE969930043B693 /* Main.storyboard */,
-				307637261DE969930043B693 /* Assets.xcassets */,
-				307637281DE969930043B693 /* LaunchScreen.storyboard */,
 				3076372B1DE969930043B693 /* Info.plist */,
 			);
+			path = MagnetSDKSample;
+			sourceTree = "<group>";
+		};
+		309ACE2E1E067111008A38F1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				309ACE361E068A34008A38F1 /* Assets.xcassets */,
+				307637281DE969930043B693 /* LaunchScreen.storyboard */,
+			);
+			name = "Supporting Files";
 			path = MagnetSDKSample;
 			sourceTree = "<group>";
 		};
@@ -145,7 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3076372A1DE969930043B693 /* LaunchScreen.storyboard in Resources */,
-				307637271DE969930043B693 /* Assets.xcassets in Resources */,
+				309ACE371E068A34008A38F1 /* Assets.xcassets in Resources */,
 				307637251DE969930043B693 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -157,8 +175,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				307637221DE969930043B693 /* ViewController.swift in Sources */,
+				309ACE311E067433008A38F1 /* MobileBannerViewController.swift in Sources */,
+				309ACE351E067457008A38F1 /* NativeAdViewController.swift in Sources */,
+				307637221DE969930043B693 /* MainViewController.swift in Sources */,
 				307637201DE969930043B693 /* AppDelegate.swift in Sources */,
+				309ACE331E067444008A38F1 /* MRectBannerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

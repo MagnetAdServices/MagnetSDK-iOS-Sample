@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +14,7 @@
         <!--MagnetSDKSample-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MagnetSDKSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="MagnetSDKSample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -22,59 +23,235 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MagnetMRectAD:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxa-T9-XGN">
-                                <rect key="frame" x="16" y="72" width="136" height="23"/>
+                            <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnet" translatesAutoresizingMaskIntoConstraints="NO" id="Dye-qF-1NN">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="V4T-Q1-mnU">
+                                <rect key="frame" x="90" y="251" width="194" height="164"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k4f-7m-4zS">
+                                        <rect key="frame" x="0.0" y="0.0" width="194" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Mobile Banner">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="i4P-Yy-XcW" kind="show" id="oWc-zo-jNm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4j-rl-7Eo">
+                                        <rect key="frame" x="0.0" y="58" width="194" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="MRect Banner">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="E0a-O1-Rlz" kind="show" identifier="" id="16T-dQ-eRg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7oM-Kp-uaS">
+                                        <rect key="frame" x="0.0" y="116" width="194" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Magnet Native">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Ijg-j3-zAU" kind="show" id="dXw-J2-RdZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MagnetAdServices.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9wB-RG-Ocs">
+                                <rect key="frame" x="16" y="111" width="170" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="136" id="3X6-hY-A9m"/>
-                                    <constraint firstAttribute="height" constant="23" id="VG9-D6-bfi"/>
+                                    <constraint firstAttribute="width" constant="170" id="Arx-jU-voy"/>
+                                    <constraint firstAttribute="height" constant="21" id="fF1-jg-EZA"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wgg-at-Cd3" customClass="MagnetMRectView" customModule="MagnetSDK">
-                                <rect key="frame" x="37" y="103" width="300" height="250"/>
-                                <color key="backgroundColor" red="1" green="0.38469380523759" blue="0.70372301394069658" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MagnetLogo" translatesAutoresizingMaskIntoConstraints="NO" id="kEQ-Af-QTf">
+                                <rect key="frame" x="12" y="64" width="170" height="68"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="250" id="Rju-hC-0mq"/>
-                                    <constraint firstAttribute="width" constant="300" id="zwQ-um-CWy"/>
+                                    <constraint firstAttribute="width" constant="170" id="9bk-hX-dOs"/>
+                                    <constraint firstAttribute="height" constant="68" id="xLw-6N-toJ"/>
                                 </constraints>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MagnetMobileBannerAD:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UdV-87-J8E">
-                                <rect key="frame" x="16" y="590" width="191" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="5tD-Hr-Wkb"/>
-                                    <constraint firstAttribute="width" constant="191" id="9vc-Bn-QJ1"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PFj-Hi-lMz" customClass="MagnetMobileBannerView" customModule="MagnetSDK">
-                                <rect key="frame" x="16" y="617" width="320" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.41482447542913492" green="0.64581950413262934" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="mxa-T9-XGN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="GaJ-dk-91d"/>
-                            <constraint firstItem="Wgg-at-Cd3" firstAttribute="top" secondItem="mxa-T9-XGN" secondAttribute="bottom" constant="8" id="HhR-a7-fWU"/>
-                            <constraint firstItem="UdV-87-J8E" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="VfR-uB-pkX"/>
-                            <constraint firstItem="Wgg-at-Cd3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nX4-hC-jel"/>
-                            <constraint firstItem="mxa-T9-XGN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="p5E-iB-uFR"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="UdV-87-J8E" secondAttribute="bottom" constant="56" id="s1T-nK-bLA"/>
+                            <constraint firstAttribute="trailing" secondItem="Dye-qF-1NN" secondAttribute="trailing" id="8d6-wg-s7s"/>
+                            <constraint firstItem="kEQ-Af-QTf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ENz-r2-NtG"/>
+                            <constraint firstItem="kEQ-Af-QTf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-4" id="KaO-th-nUU"/>
+                            <constraint firstItem="V4T-Q1-mnU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PkS-6M-Adg"/>
+                            <constraint firstItem="9wB-RG-Ocs" firstAttribute="top" secondItem="kEQ-Af-QTf" secondAttribute="bottom" constant="-21" id="VbO-XQ-M0S"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Dye-qF-1NN" secondAttribute="bottom" id="YaF-Qb-u6R"/>
+                            <constraint firstItem="Dye-qF-1NN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gog-Ge-tHI"/>
+                            <constraint firstItem="9wB-RG-Ocs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="mhz-ag-bgy"/>
+                            <constraint firstItem="Dye-qF-1NN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="nz2-J0-WiF"/>
+                            <constraint firstItem="V4T-Q1-mnU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ri3-Sh-6eT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="MagnetSDKSample" id="Odt-2Y-acL"/>
-                    <connections>
-                        <outlet property="magnetMRectAd" destination="Wgg-at-Cd3" id="BhZ-34-Kwe"/>
-                        <outlet property="magnetMobileBannerAd" destination="PFj-Hi-lMz" id="gVh-SO-U2e"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="962.39999999999998" y="116.49175412293854"/>
+        </scene>
+        <!--Mobile Banner View Controller-->
+        <scene sceneID="GXd-Hi-OVj">
+            <objects>
+                <viewController id="i4P-Yy-XcW" customClass="MobileBannerViewController" customModule="MagnetSDKSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lwh-LQ-fgf"/>
+                        <viewControllerLayoutGuide type="bottom" id="H14-u5-KJE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lGn-aM-Huv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="emK-DT-HzR" customClass="MagnetMobileBannerView" customModule="MagnetSDK">
+                                <rect key="frame" x="16" y="102" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="emK-DT-HzR" firstAttribute="leading" secondItem="lGn-aM-Huv" secondAttribute="leadingMargin" id="NID-iJ-Z5r"/>
+                            <constraint firstItem="H14-u5-KJE" firstAttribute="top" secondItem="emK-DT-HzR" secondAttribute="bottom" constant="437" id="RMj-bi-QLD"/>
+                            <constraint firstAttribute="trailing" secondItem="emK-DT-HzR" secondAttribute="trailing" constant="119" id="X5g-EE-WXd"/>
+                            <constraint firstItem="emK-DT-HzR" firstAttribute="top" secondItem="lwh-LQ-fgf" secondAttribute="bottom" constant="38" id="hHp-vR-2yW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="magnetMobileBannerView" destination="emK-DT-HzR" id="OFH-SH-jHb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cQS-RJ-7Kl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1817" y="-195"/>
+        </scene>
+        <!--Rect Banner View Controller-->
+        <scene sceneID="3u1-Q8-ojC">
+            <objects>
+                <viewController id="E0a-O1-Rlz" customClass="MRectBannerViewController" customModule="MagnetSDKSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zEs-pa-bR6"/>
+                        <viewControllerLayoutGuide type="bottom" id="cHA-Ao-wNP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AZY-8W-Lne">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="19t-6d-USn" customClass="MagnetMRectView" customModule="MagnetSDK">
+                                <rect key="frame" x="37" y="208" width="300" height="250"/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="XY0-Xt-axD"/>
+                                    <constraint firstAttribute="width" constant="300" id="cE6-pe-j7x"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="19t-6d-USn" firstAttribute="centerY" secondItem="AZY-8W-Lne" secondAttribute="centerY" id="5XL-UI-gRL"/>
+                            <constraint firstItem="19t-6d-USn" firstAttribute="centerX" secondItem="AZY-8W-Lne" secondAttribute="centerX" id="DeN-wZ-3WU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="magnetMRectView" destination="19t-6d-USn" id="XMl-kr-oDf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e24-iY-ayv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1816.8" y="458.32083958020991"/>
+        </scene>
+        <!--Native Ad View Controller-->
+        <scene sceneID="GKB-Kp-Yxw">
+            <objects>
+                <viewController id="Ijg-j3-zAU" customClass="NativeAdViewController" customModule="MagnetSDKSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ymm-9x-3aP"/>
+                        <viewControllerLayoutGuide type="bottom" id="FtK-E1-G8O"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BhY-dL-S0f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0th-U7-YM0">
+                                <rect key="frame" x="8" y="74" width="359" height="300"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vwC-TN-5i6">
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="260"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="LFq-Ls-YIW">
+                                                <rect key="frame" x="0.0" y="0.0" width="359" height="50"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8Ff-kD-TeL">
+                                                        <rect key="frame" x="0.0" y="0.0" width="301" height="50"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="headLine Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6L-m0-Ry6">
+                                                                <rect key="frame" x="0.0" y="0.0" width="301" height="25"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V3N-Kj-p0i">
+                                                                <rect key="frame" x="0.0" y="25" width="301" height="25"/>
+                                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                                <color key="textColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FzJ-ns-vEe">
+                                                        <rect key="frame" x="311" y="0.0" width="48" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="48" id="AZ6-lF-FOj"/>
+                                                            <constraint firstAttribute="height" constant="50" id="SQ9-zm-cap"/>
+                                                            <constraint firstAttribute="width" secondItem="FzJ-ns-vEe" secondAttribute="height" multiplier="24:25" id="bec-Jd-xT4"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_cover" translatesAutoresizingMaskIntoConstraints="NO" id="mbr-rL-ejC">
+                                                <rect key="frame" x="0.0" y="60" width="359" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="200" id="5Rh-eM-3bE"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vuo-V1-5Bz">
+                                        <rect key="frame" x="0.0" y="270" width="359" height="30"/>
+                                        <color key="backgroundColor" red="0.89680385510000005" green="0.92983543219999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="52D-OS-a96"/>
+                                        </constraints>
+                                        <state key="normal" title="actionButton"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0th-U7-YM0" firstAttribute="leading" secondItem="BhY-dL-S0f" secondAttribute="leadingMargin" constant="-8" id="Etj-xs-mBk"/>
+                            <constraint firstItem="0th-U7-YM0" firstAttribute="centerX" secondItem="BhY-dL-S0f" secondAttribute="centerX" id="kLw-Ti-FrL"/>
+                            <constraint firstItem="0th-U7-YM0" firstAttribute="top" secondItem="ymm-9x-3aP" secondAttribute="bottom" constant="10" id="vea-4T-L43"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="action" destination="Vuo-V1-5Bz" id="kTr-J7-Ud3"/>
+                        <outlet property="des" destination="V3N-Kj-p0i" id="DK5-6f-nAa"/>
+                        <outlet property="headLine" destination="e6L-m0-Ry6" id="CzI-us-T9h"/>
+                        <outlet property="icon" destination="FzJ-ns-vEe" id="Ofq-Sd-tEy"/>
+                        <outlet property="main" destination="mbr-rL-ejC" id="mUh-P1-KZm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KLJ-pB-iIL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="962" y="906"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Vaa-ui-khe">
@@ -95,4 +272,9 @@
             <point key="canvasLocation" x="37.600000000000001" y="116.49175412293854"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="MagnetLogo" width="300" height="130"/>
+        <image name="magnet" width="1111" height="1661"/>
+        <image name="no_cover" width="500" height="500"/>
+    </resources>
 </document>
