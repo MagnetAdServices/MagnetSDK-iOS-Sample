@@ -20,11 +20,13 @@ class NativeAdViewController: UIViewController, MagnetEventsDelegate {
     @IBOutlet weak var main: UIImageView!
     @IBOutlet weak var action: UIButton!
     
+    var binder: MagnetNativeViewBinder!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // ابتدا به وسیله ی builder زیر می توانید ویو های خود را به مگنت معرفی کنید  و در متغیر نگهداری داری کنید
-        let binder = MagnetNativeViewBinder {
+        binder = MagnetNativeViewBinder {
             $0.headLineLabel = headLine
             $0.descriptionLabel = des
             $0.iconImage = icon
