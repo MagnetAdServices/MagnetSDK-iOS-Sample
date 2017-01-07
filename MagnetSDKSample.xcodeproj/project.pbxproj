@@ -7,16 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		301D67AB1E1CF188003FC7BE /* ItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301D67AA1E1CF188003FC7BE /* ItemViewCell.swift */; };
+		301D67AE1E1CF1CC003FC7BE /* AdViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301D67AD1E1CF1CC003FC7BE /* AdViewCell.swift */; };
+		301D67B01E1CF1EA003FC7BE /* NativeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301D67AF1E1CF1EA003FC7BE /* NativeTableViewController.swift */; };
+		301D67B51E1CF3B3003FC7BE /* itemsJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 301D67B41E1CF3B3003FC7BE /* itemsJSON.json */; };
+		301D67B71E1D094E003FC7BE /* PostItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301D67B61E1D094E003FC7BE /* PostItem.swift */; };
 		307637201DE969930043B693 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3076371F1DE969930043B693 /* AppDelegate.swift */; };
 		307637221DE969930043B693 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307637211DE969930043B693 /* MainViewController.swift */; };
 		307637251DE969930043B693 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 307637231DE969930043B693 /* Main.storyboard */; };
+		307637271DE969930043B693 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 307637261DE969930043B693 /* Assets.xcassets */; };
 		3076372A1DE969930043B693 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 307637281DE969930043B693 /* LaunchScreen.storyboard */; };
 		309ACE311E067433008A38F1 /* MobileBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309ACE301E067433008A38F1 /* MobileBannerViewController.swift */; };
 		309ACE331E067444008A38F1 /* MRectBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309ACE321E067444008A38F1 /* MRectBannerViewController.swift */; };
 		309ACE351E067457008A38F1 /* NativeAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309ACE341E067457008A38F1 /* NativeAdViewController.swift */; };
-		309ACE371E068A34008A38F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 309ACE361E068A34008A38F1 /* Assets.xcassets */; };
-		30CABA2F1E019AE60001CACD /* MagnetSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30CABA2E1E019AE60001CACD /* MagnetSDK.framework */; };
-		30CABA301E019AE60001CACD /* MagnetSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 30CABA2E1E019AE60001CACD /* MagnetSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		30E345751E20FFB700843E09 /* MagnetSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E345741E20FFB700843E09 /* MagnetSDK.framework */; };
+		30E345761E20FFB700843E09 /* MagnetSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 30E345741E20FFB700843E09 /* MagnetSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,7 +31,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				30CABA301E019AE60001CACD /* MagnetSDK.framework in Embed Frameworks */,
+				30E345761E20FFB700843E09 /* MagnetSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -34,17 +39,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		301D67AA1E1CF188003FC7BE /* ItemViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViewCell.swift; sourceTree = "<group>"; };
+		301D67AD1E1CF1CC003FC7BE /* AdViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdViewCell.swift; sourceTree = "<group>"; };
+		301D67AF1E1CF1EA003FC7BE /* NativeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeTableViewController.swift; sourceTree = "<group>"; };
+		301D67B41E1CF3B3003FC7BE /* itemsJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = itemsJSON.json; sourceTree = "<group>"; };
+		301D67B61E1D094E003FC7BE /* PostItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostItem.swift; sourceTree = "<group>"; };
 		3076371C1DE969930043B693 /* MagnetSDKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagnetSDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3076371F1DE969930043B693 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		307637211DE969930043B693 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		307637241DE969930043B693 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		307637261DE969930043B693 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		307637291DE969930043B693 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3076372B1DE969930043B693 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		309ACE301E067433008A38F1 /* MobileBannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileBannerViewController.swift; sourceTree = "<group>"; };
 		309ACE321E067444008A38F1 /* MRectBannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MRectBannerViewController.swift; sourceTree = "<group>"; };
 		309ACE341E067457008A38F1 /* NativeAdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeAdViewController.swift; sourceTree = "<group>"; };
-		309ACE361E068A34008A38F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		30CABA2E1E019AE60001CACD /* MagnetSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MagnetSDK.framework; sourceTree = "<group>"; };
+		30E345741E20FFB700843E09 /* MagnetSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MagnetSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,17 +62,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30CABA2F1E019AE60001CACD /* MagnetSDK.framework in Frameworks */,
+				30E345751E20FFB700843E09 /* MagnetSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		301D67AC1E1CF1A7003FC7BE /* Advanced Native (TableView) */ = {
+			isa = PBXGroup;
+			children = (
+				301D67AF1E1CF1EA003FC7BE /* NativeTableViewController.swift */,
+				301D67AA1E1CF188003FC7BE /* ItemViewCell.swift */,
+				301D67AD1E1CF1CC003FC7BE /* AdViewCell.swift */,
+				301D67B61E1D094E003FC7BE /* PostItem.swift */,
+			);
+			name = "Advanced Native (TableView)";
+			sourceTree = "<group>";
+		};
+		301D67B11E1CF2B0003FC7BE /* Magnet Ad */ = {
+			isa = PBXGroup;
+			children = (
+				309ACE341E067457008A38F1 /* NativeAdViewController.swift */,
+				309ACE321E067444008A38F1 /* MRectBannerViewController.swift */,
+				309ACE301E067433008A38F1 /* MobileBannerViewController.swift */,
+			);
+			name = "Magnet Ad";
+			sourceTree = "<group>";
+		};
 		307637131DE969930043B693 = {
 			isa = PBXGroup;
 			children = (
-				30CABA2E1E019AE60001CACD /* MagnetSDK.framework */,
+				30E345741E20FFB700843E09 /* MagnetSDK.framework */,
 				3076371E1DE969930043B693 /* MagnetSDKSample */,
 				309ACE2E1E067111008A38F1 /* Supporting Files */,
 				3076371D1DE969930043B693 /* Products */,
@@ -82,11 +113,9 @@
 			children = (
 				3076371F1DE969930043B693 /* AppDelegate.swift */,
 				307637211DE969930043B693 /* MainViewController.swift */,
-				309ACE301E067433008A38F1 /* MobileBannerViewController.swift */,
-				309ACE321E067444008A38F1 /* MRectBannerViewController.swift */,
-				309ACE341E067457008A38F1 /* NativeAdViewController.swift */,
+				301D67B11E1CF2B0003FC7BE /* Magnet Ad */,
+				301D67AC1E1CF1A7003FC7BE /* Advanced Native (TableView) */,
 				307637231DE969930043B693 /* Main.storyboard */,
-				3076372B1DE969930043B693 /* Info.plist */,
 			);
 			path = MagnetSDKSample;
 			sourceTree = "<group>";
@@ -94,8 +123,10 @@
 		309ACE2E1E067111008A38F1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				309ACE361E068A34008A38F1 /* Assets.xcassets */,
+				301D67B41E1CF3B3003FC7BE /* itemsJSON.json */,
+				307637261DE969930043B693 /* Assets.xcassets */,
 				307637281DE969930043B693 /* LaunchScreen.storyboard */,
+				3076372B1DE969930043B693 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			path = MagnetSDKSample;
@@ -163,7 +194,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3076372A1DE969930043B693 /* LaunchScreen.storyboard in Resources */,
-				309ACE371E068A34008A38F1 /* Assets.xcassets in Resources */,
+				301D67B51E1CF3B3003FC7BE /* itemsJSON.json in Resources */,
+				307637271DE969930043B693 /* Assets.xcassets in Resources */,
 				307637251DE969930043B693 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,10 +207,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				301D67B01E1CF1EA003FC7BE /* NativeTableViewController.swift in Sources */,
 				309ACE311E067433008A38F1 /* MobileBannerViewController.swift in Sources */,
 				309ACE351E067457008A38F1 /* NativeAdViewController.swift in Sources */,
 				307637221DE969930043B693 /* MainViewController.swift in Sources */,
+				301D67AB1E1CF188003FC7BE /* ItemViewCell.swift in Sources */,
 				307637201DE969930043B693 /* AppDelegate.swift in Sources */,
+				301D67B71E1D094E003FC7BE /* PostItem.swift in Sources */,
+				301D67AE1E1CF1CC003FC7BE /* AdViewCell.swift in Sources */,
 				309ACE331E067444008A38F1 /* MRectBannerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

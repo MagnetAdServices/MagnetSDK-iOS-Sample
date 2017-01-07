@@ -117,23 +117,17 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
 @import CoreGraphics;
+@import ObjectiveC;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
-
-SWIFT_PROTOCOL("_TtP9MagnetSDK20MagnetEventsDelegate_")
-@protocol MagnetEventsDelegate
-@optional
-- (void)onMagnetAdError:(NSInteger)code message:(NSString * _Nonnull)message type:(NSString * _Nonnull)type;
-- (void)isAdReady:(BOOL)adState;
-@end
-
+@protocol MagnetEventsDelegate;
 @class NSCoder;
 
-SWIFT_CLASS("_TtC9MagnetSDK15MagnetMRectView")
-@interface MagnetMRectView : UIView
-- (void)loadRequest:(NSString * _Nullable)adUnitID delegate:(id <MagnetEventsDelegate> _Nullable)delegate;
+SWIFT_CLASS("_TtC9MagnetSDK17MagnetAdMRectView")
+@interface MagnetAdMRectView : UIView
+- (void)loadRequestWithAdUnitID:(NSString * _Nullable)adUnitID delegate:(id <MagnetEventsDelegate> _Nullable)delegate;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
@@ -142,12 +136,37 @@ SWIFT_CLASS("_TtC9MagnetSDK15MagnetMRectView")
 /**
   Magnet Ad Mobile Banner View
 */
-SWIFT_CLASS("_TtC9MagnetSDK22MagnetMobileBannerView")
-@interface MagnetMobileBannerView : UIView
+SWIFT_CLASS("_TtC9MagnetSDK24MagnetAdMobileBannerView")
+@interface MagnetAdMobileBannerView : UIView
 @property (nonatomic) double positionConstant;
-- (void)loadRequest:(NSString * _Nonnull)adUnitID delegate:(id <MagnetEventsDelegate> _Nullable)delegate;
+- (void)loadRequestWithAdUnitID:(NSString * _Nonnull)adUnitID delegate:(id <MagnetEventsDelegate> _Nullable)delegate;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+@class UIImageView;
+@class UILabel;
+@class UIButton;
+
+SWIFT_CLASS("_TtC9MagnetSDK14MagnetAdNative")
+@interface MagnetAdNative : NSObject
+@property (nonatomic, weak) UIImageView * _Null_unspecified iconImage;
+@property (nonatomic, weak) UILabel * _Null_unspecified headLineLabel;
+@property (nonatomic, weak) UILabel * _Nullable descriptionLabel;
+@property (nonatomic, weak) UIImageView * _Nullable mainImage;
+@property (nonatomic, weak) UIButton * _Null_unspecified actionButton;
+- (nonnull instancetype)initWithBuilder:(void (^ _Nonnull)(MagnetAdNative * _Nonnull))builder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)loadRequestWithAdUnitId:(NSString * _Nonnull)adUnitId delegate:(id <MagnetEventsDelegate> _Nullable)delegate;
+- (void)viewBinderWithBuilder:(SWIFT_NOESCAPE void (^ _Nonnull)(MagnetAdNative * _Nonnull))builder;
+@end
+
+
+SWIFT_PROTOCOL("_TtP9MagnetSDK20MagnetEventsDelegate_")
+@protocol MagnetEventsDelegate
+@optional
+- (void)magnetAdErrors:(NSInteger)code message:(NSString * _Nonnull)message type:(NSString * _Nonnull)type;
+- (void)magnetAdNativeDidReceive:(MagnetAdNative * _Nonnull)magnetAdNative;
 @end
 
 
@@ -164,10 +183,6 @@ SWIFT_CLASS("_TtC9MagnetSDK22MagnetMobileBannerView")
 
 
 @interface UIView (SWIFT_EXTENSION(MagnetSDK))
-@end
-
-
-@interface UIViewController (SWIFT_EXTENSION(MagnetSDK))
 @end
 
 #pragma clang diagnostic pop

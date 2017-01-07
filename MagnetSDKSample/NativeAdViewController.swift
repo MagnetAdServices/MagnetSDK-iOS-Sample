@@ -14,35 +14,36 @@ import MagnetSDK
 // پروتکل MagnetEventsDelegate را برای دریافت خطاهای هنگام اجرا می توانید پیاده سازی کنید
 class NativeAdViewController: UIViewController, MagnetEventsDelegate {
     
-    @IBOutlet weak var headLine: UILabel!
-    @IBOutlet weak var des: UILabel!
-    @IBOutlet weak var icon: UIImageView!
-    @IBOutlet weak var main: UIImageView!
-    @IBOutlet weak var action: UIButton!
+    @IBOutlet weak var adTitle: UILabel!
+    @IBOutlet weak var adDescription: UILabel!
+    @IBOutlet weak var adIcon: UIImageView!
+    @IBOutlet weak var adPicture: UIImageView!
+    @IBOutlet weak var adButton: UIButton!
     
-    var binder: MagnetNativeViewBinder!
+    var binder: MagnetAdNative!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // ابتدا به وسیله ی builder زیر می توانید ویو های خود را به مگنت معرفی کنید  و در متغیر نگهداری داری کنید
-        binder = MagnetNativeViewBinder {
-            $0.headLineLabel = headLine
-            $0.descriptionLabel = des
-            $0.iconImage = icon
-            $0.mainImage = main
-            $0.actionButton = action
-        }
+        binder = MagnetAdNative (builder: { (binder) in
+            binder.iconImage = self.adIcon
+            binder.headLineLabel = self.adTitle
+            binder.descriptionLabel = self.adDescription
+            binder.actionButton = self.adButton
+            binder.mainImage = self.adPicture
+        })
         
         // س‍پس توسط متغییری که مقدار MagnetNativeViewBinder را نگهداری می کند دستور لود تبلیغ را صادر می کنیم
         //توجه داشته باشید که همراه دستور لود تبلیغ باید مقدرا adUnitId را ارسال کنید و برای دریافت خطاها delegate این کلاس را نیز ارسال کنید
-        binder.loadRequest("YourAdUnitId", delegate: self)
+        binder.loadRequest(adUnitId: "YourAdUnitID", delegate: self)
     }
 
     // در صورتی که MagnetEventsDelegate را پیاده سازی کرده باشید از طریق متد زیر می توانید ارور های مگنت را دریافت و چاپ نمایید
     // درصورتی که این متد فراخوانی شود به این معنی میباشد که به دلایلی تبلیغ مورد نظر لود نشده است که علت آن از طریق پارامتر های این متد در دسترس است
-    func onMagnetAdError(_ code: Int, message: String, type: String) {
+    func magnetAdErrors(_ code: Int, message: String, type: String) {
         print("Magnet ERROR: \(type) -> \(code): \(message)")
     }
-
 }
+
+
