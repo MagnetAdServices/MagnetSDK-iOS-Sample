@@ -62,16 +62,15 @@ import MagnetSDK
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-var window: UIWindow?
+    var window: UIWindow?
 
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
-func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        MagnetSDK.initialize()
+        MagnetSDK.settings.testMode = true
 
-MagnetSDK.initialize()
-MagnetSDK.settings.testMode = true
-
-return true
-}
+        return true
+    }
 }
 ```
 
@@ -133,15 +132,15 @@ import MagnetSDK
 
 class ViewController: UIViewController {
 
-@IBOutlet weak var magnetAdMobileBannerView: MagnetAdMobileBannerView!
+    @IBOutlet weak var magnetAdMobileBannerView: MagnetAdMobileBannerView!
 
-override func viewDidLoad() {
-super.viewDidLoad()
+    override func viewDidLoad() {
+        super.viewDidLoad()
 
-magnetAdMobileBannerView.loadRequest("your adUnitId")
-// یا برای پیاده سازی با events
-// magnetAdMobileBannerView.loadRequest("your adUnitId", delegate: self)
-}
+        magnetAdMobileBannerView.loadRequest("your adUnitId")
+        // یا برای پیاده سازی با events
+        // magnetAdMobileBannerView.loadRequest("your adUnitId", delegate: self)
+    }
 }
 ```
 
@@ -200,15 +199,15 @@ import MagnetSDK
 
 class ViewController: UIViewController {
 
-@IBOutlet weak var magnetAdMRectView: MagnetAdMRectView!
+    @IBOutlet weak var magnetAdMRectView: MagnetAdMRectView!
 
-override func viewDidLoad() {
-super.viewDidLoad()
+    override func viewDidLoad() {
+        super.viewDidLoad()
 
-magnetAdMRectView.loadRequest("your adUnitId")
-// یا برای پیاده سازی با events
-// magnetAdMRectView.loadRequest("your adUnitId", delegate: self)
-}
+        magnetAdMRectView.loadRequest("your adUnitId")
+        // یا برای پیاده سازی با events
+        // magnetAdMRectView.loadRequest("your adUnitId", delegate: self)
+    }
 }
 ```
 
@@ -254,11 +253,11 @@ import MagnetSDK
 var binder: MagnetAdNative!
 
 binder = MagnetAdNative (builder: { (binder) in
-binder.iconImage = self.iconImage
-binder.headLineLabel = self.headLineLabel
-binder.descriptionLabel = self.adDescription
-binder.actionButton = self.actionButton
-binder.mainImage = self.mainImage
+    binder.iconImage = self.iconImage
+    binder.headLineLabel = self.headLineLabel
+    binder.descriptionLabel = self.adDescription
+    binder.actionButton = self.actionButton
+    binder.mainImage = self.mainImage
 })
 ```
 
@@ -290,29 +289,29 @@ import MagnetSDK
 
 class ViewController: UIViewController {
 
-@IBOutlet weak var iconImage: UIImageView!
-@IBOutlet weak var headLineLabel: UILabel!
-@IBOutlet weak var actionButton: UIButton! 
-@IBOutlet weak var descriptionLabel: UILabel!
-@IBOutlet weak var mainImage: UIImageView!
+    @IBOutlet weak var iconImage: UIImageView!
+    @IBOutlet weak var headLineLabel: UILabel!
+    @IBOutlet weak var actionButton: UIButton! 
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var mainImage: UIImageView!
 
-var binder: MagnetAdNative!
+    var binder: MagnetAdNative!
 
-override func viewDidLoad() {
-super.viewDidLoad()
+    override func viewDidLoad() {
+        super.viewDidLoad()
 
-binder = MagnetAdNative (builder: { (binder) in
-binder.iconImage = self.iconImage
-binder.headLineLabel = self.headLineLabel
-binder.descriptionLabel = self.adDescription
-binder.actionButton = self.actionButton
-binder.mainImage = self.mainImage
-})
+        binder = MagnetAdNative (builder: { (binder) in
+            binder.iconImage = self.iconImage
+            binder.headLineLabel = self.headLineLabel
+            binder.descriptionLabel = self.adDescription
+            binder.actionButton = self.actionButton
+            binder.mainImage = self.mainImage
+        })
 
-binder.loadRequest("your adUnitId")
-// یا برای پیاده سازی با events
-// binder.loadRequest("your adUnitId", delegate: self)
-}
+        binder.loadRequest("your adUnitId")
+        // یا برای پیاده سازی با events
+        // binder.loadRequest("your adUnitId", delegate: self)
+    }
 }
 ```
 
@@ -330,7 +329,7 @@ class ViewController: UIViewController, MagnetEventsDelegate
 
 ```
 func magnetAdErrors(_ code: Int, message: String, type: String) {
-print("Magnet ERROR: \(type) -> \(code): \(message)")
+    print("Magnet ERROR: \(type) -> \(code): \(message)")
 }
 ```
 
