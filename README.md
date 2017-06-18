@@ -10,7 +10,7 @@ Sample project to integrate Magnet's advertising sdk
 ----------------------------------------------------------------------------
 
 
-* ابتدا کتابخانه مگنت را از [اینجا][1] دریافت کرده و به پروژه  خود اضافه کنید
+* ابتدا کتابخانه مگنت را از [اینجا][1] دریافت کرده و به پروژه  خود اضافه کنید و یا از همین Repository بردارید!
 > برای اضافه کردن مگنت به پروژه تون فقط کافیه MagnetSDK.Framework را کشیده و در قسمت Embedded Binaries در تب General تنظیمات پروژه خود رها کنید
 > ![import][2]
 
@@ -337,12 +337,12 @@ print("Magnet ERROR: \(type) -> \(code): \(message)")
 ----------------------------------------------------------------------------
 
 
-[1]:/FileHandler/Download/Swift
-[2]:/public/guides/content/ios/import.png
-[3]:/public/guides/content/ios/prop.png
-[4]:/public/guides/content/ios/inheritance.png
-[5]:/public/guides/content/ios/mrectCustomClass.png
-[6]:/public/guides/content/ios/mrectSize.png
+[1]:https://app.magnetadservices.com/FileHandler/Download/Swift
+[2]:https://user-images.githubusercontent.com/6095298/27259253-ce8d04a8-5423-11e7-8ec9-a00fd5f62a2b.jpg
+[3]:https://user-images.githubusercontent.com/6095298/27259256-cefc0326-5423-11e7-8bfa-fffb20a19411.jpg
+[4]:https://user-images.githubusercontent.com/6095298/27259255-cebb740a-5423-11e7-8249-2e1d4a605084.jpg
+[5]:https://user-images.githubusercontent.com/6095298/27259254-ceb99ba8-5423-11e7-8da1-814fba4db43d.jpg
+[6]:https://user-images.githubusercontent.com/6095298/27259257-cefc1b5e-5423-11e7-8cd6-2954e4f99ed0.jpg
 [7]:/devguides/introduction-to-native-ad
-[8]:/public/guides/content/ios/nativeView.png
+[8]:https://user-images.githubusercontent.com/6095298/27259299-aa81b30a-5424-11e7-893a-fb57484e2f97.png
 
