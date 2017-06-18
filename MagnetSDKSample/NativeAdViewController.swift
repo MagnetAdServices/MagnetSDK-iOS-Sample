@@ -36,13 +36,13 @@ class NativeAdViewController: UIViewController, MagnetEventsDelegate {
         
         // س‍پس توسط متغییری که مقدار MagnetNativeViewBinder را نگهداری می کند دستور لود تبلیغ را صادر می کنیم
         //توجه داشته باشید که همراه دستور لود تبلیغ باید مقدرا adUnitId را ارسال کنید و برای دریافت خطاها delegate این کلاس را نیز ارسال کنید
-        binder.loadRequest(adUnitId: "YourAdUnitID", delegate: self)
+        binder.loadRequest(adUnitId: "0ed6ce11664e48ac9cc8982f2fcbca3a", delegate: self)
     }
 
     // در صورتی که MagnetEventsDelegate را پیاده سازی کرده باشید از طریق متد زیر می توانید ارور های مگنت را دریافت و چاپ نمایید
     // درصورتی که این متد فراخوانی شود به این معنی میباشد که به دلایلی تبلیغ مورد نظر لود نشده است که علت آن از طریق پارامتر های این متد در دسترس است
-    func magnetAdErrors(_ code: Int, message: String, type: String) {
-        print("Magnet ERROR: \(type) -> \(code): \(message)")
+    func magnetAdErrors(code: Int, message: String, adType: MagnetAdType) {
+        print("\(Date().now) Magnet ERROR: \(adType) -> \(code): \(message)")
     }
 }
 

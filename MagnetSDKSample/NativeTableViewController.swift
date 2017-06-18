@@ -83,13 +83,12 @@ class NativeTableViewController: UITableViewController, MagnetEventsDelegate {
     func preloadNextAd() {
         if !adsToLoad.isEmpty {
             let magnetAd = adsToLoad.removeFirst()
-            magnetAd.loadRequest(adUnitId: "YourAdUnitID", delegate: self)
+            magnetAd.loadRequest(adUnitId: "0ed6ce11664e48ac9cc8982f2fcbca3a", delegate: self)
         }
     }
     
     func adMagnetNativeAds() {
         var index = adInterval
-        
         while index < tableViewItems.count {
             let magnetAd = MagnetAdNative()
             tableViewItems.insert(magnetAd, at: index)
@@ -98,9 +97,8 @@ class NativeTableViewController: UITableViewController, MagnetEventsDelegate {
             
             index += adInterval
         }
-        
     }
-    
+        
     func addPostItems() {
         var JSONObject: Any
         
@@ -134,13 +132,13 @@ class NativeTableViewController: UITableViewController, MagnetEventsDelegate {
     
     // MARK: - Magnet Event Delegates
     
-    func magnetAdNativeDidReceive(_ magnetAdNative: MagnetAdNative) {
+    func magnetAdNativeDidReceive(magnetAdNative: MagnetAdNative) {
         loadStateForAds[magnetAdNative] = true
         preloadNextAd()
     }
     
-    func magnetAdErrors(_ code: Int, message: String, type: String) {
-        print("Magnet ERROR: \(type) -> \(code): \(message)")
+    func magnetAdErrors(code: Int, message: String, adType: MagnetAdType) {
+        print("\(Date().now) Magnet ERROR: \(adType) -> \(code): \(message)")
         preloadNextAd()
     }
     

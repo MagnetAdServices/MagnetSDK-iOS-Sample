@@ -27,10 +27,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         MagnetSDK.settings.testMode = true
         
         // با تنظیم زیر می توانید تعیین کنید که پخش صدا فعال باشد یا خیر
-        MagnetSDK.settings.soundEnable = true
-        
+        MagnetSDK.settings.soundEnable = false
+        MagnetSDK.settings.logging = true
         
         return true
     }
+    
 }
 

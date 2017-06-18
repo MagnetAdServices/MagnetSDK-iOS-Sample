@@ -15,23 +15,22 @@ import MagnetSDK
 class MRectBannerViewController: UIViewController, MagnetEventsDelegate {
     
     // ویو (View) های خود را که در قسمت Custom Class شان از کلاس های مگنت به ارث برده اید در کنترلر خود تعریف کنید
-    @IBOutlet weak var magnetMRectView: MagnetAdMRectView!
+    @IBOutlet weak var magnetAdMRectView: MagnetAdMRectView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // برای لود تبلیغ تنها کافیست متد زیر را اجرا کنید
-//        magnetMRectView.loadRequest("YourAdUnitId")
+//        magnetAdMRectView.loadRequest("YourAdUnitId")
         
         // در صورتی که می خواهید خطاهای هنگام اجرای برنامه را مشاهده کنید می توانید delegate مگنت را نیز در کلاس کنترلر خود به ارث برده و همرا با متد loadRequest به آن معرفی کنید. مانند زیر:
-        magnetMRectView.loadRequest(adUnitID: "YourAdUnitID", delegate: self)
+        magnetAdMRectView.loadRequest(adUnitID: "0ed6ce11664e48ac9cc8982f2fcbca3a", delegate: self)
     }
 
     
     // در صورتی که MagnetEventsDelegate را پیاده سازی کرده باشید از طریق متد زیر می توانید ارور های مگنت را دریافت و چاپ نمایید
     // درصورتی که این متد فراخوانی شود به این معنی میباشد که به دلایلی تبلیغ مورد نظر لود نشده است که علت آن از طریق پارامتر های این متد در دسترس است
-    func magnetAdErrors(_ code: Int, message: String, type: String) {
-        print("Magnet ERROR: \(type) -> \(code): \(message)")
+    func magnetAdErrors(code: Int, message: String, adType: MagnetAdType) {
+        print("\(Date().now) Magnet ERROR: \(adType) -> \(code): \(message)")
     }
-
 }
