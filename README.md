@@ -1,6 +1,6 @@
 # Magnet iOS SDK integration (Swift 3.1)
 
-Sample project to integrate Magnet's advertising sdk
+Sample project to integrate Magnet SDK
 
 ## 👉 [For Swift 3.0.2 Sample Click Here](https://github.com/MagnetAdServices/MagnetSDK-iOS-Sample/tree/3.0.2)
 
@@ -79,7 +79,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 ## Mobile Banner
 
-بنر موبایل تبلیغی است که معمولا به صورت نواری در پایین صفحه نمایش، نشان داده می‌شود و برای اضافه کردن آن ابتدا یک `UIView` به `View Controller` مورد نظر اضافه کرده و از قسمت `Custom Class` کلاس `MagnetMobileBannerView` را تایپ کنید و قسمت `Module` را با `MagnetSDK` مقدار دهی کنید 
+بنر موبایل تبلیغی است که معمولا به صورت نواری در پایین صفحه نمایش، نشان داده می‌شود و برای اضافه کردن آن ابتدا یک `UIView` به `View Controller` مورد نظر اضافه کرده و از قسمت `Custom Class` کلاس `MagnetAdMobileBannerView` را تایپ کنید و قسمت `Module` را با `MagnetSDK` مقدار دهی کنید 
 
 ![inheritance][4]
 
@@ -149,7 +149,7 @@ class ViewController: UIViewController {
 ## MRect Banner
 
 بنر مستطیلی تبلیغی است که در ابعاد مختلف نمایش داده می‌شود و ابعاد آن را شما می‌توانید بر اساس کاربردش در برنامه خودتان تعیین نمایید. همانند بنر موبایل، اضافه کردن آن به پروژه تنها به چند خط کد نیاز است.
-برای اضافه کردن آن ابتدا یک `UIView` به `View Controller` مورد نظر اضافه کرده و از قسمت `Custom Class` کلاس `MagnetMRectView` را تایپ کنید و قسمت `Module` را با `MagnetSDK` مقدار دهی کنید 
+برای اضافه کردن آن ابتدا یک `UIView` به `View Controller` مورد نظر اضافه کرده و از قسمت `Custom Class` کلاس `MagnetAdMRectView` را تایپ کنید و قسمت `Module` را با `MagnetSDK` مقدار دهی کنید 
 
 ![mrectCustomClass][5]
 
